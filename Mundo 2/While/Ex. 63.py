@@ -1,0 +1,11 @@
+n = int(input("Até onde a sequência vai? "))
+a1 = 0
+a2 = 1
+s = 0
+c = 1
+while c <= n:
+    a1 = a2
+    a2 = s
+    s = a1+a2
+    print(a2, end="...")
+    c += 1

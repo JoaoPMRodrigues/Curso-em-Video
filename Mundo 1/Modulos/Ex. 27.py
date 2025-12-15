@@ -1,0 +1,5 @@
+nome = input("Digite seu nomme: ")
+nome = nome.split()
+fim = len(nome)
+print(f"O 1º nome da pessoa é: {nome[0]}")
+print(f"E o ultimo nome é: {nome[fim-1]}")
