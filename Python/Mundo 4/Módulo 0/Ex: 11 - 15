@@ -1,0 +1,90 @@
+Ex 11:
+Qual dos objetos abaixo seria o único abstrato da lista?
+
+(A) Sensor
+(B) Robo
+(X) Notificação
+(D) Livro
+
+Ex 12:
+Na teoria de OO, o termo usado para o ato de fazer um objeto existir, a partir de um modelo se chama:
+
+(X) Instanciar
+(B) Classificar
+(C) Objetificar
+(D) Forjar
+
+Ex 13:
+Todo objeto tem uma lista de atividades que podem ser feitas com ele ou que ele pode fazer sozinho, que são:
+
+(A) Atributos
+(X) Métodos
+(C) Classes
+(D) Instâncias 
+
+Ex 14:
+Ao conjunto de todos os valores de atributos de um objeto em determinado momento, damos o nome de:
+
+(A) Identidade
+(B) Instância
+(C) Método
+(X) Estado
+
+Ex 15:
+Crei a estrutura de 2 objetos: Um concreto e outro abstrato, inclua também seus principais atributos e métodos.
+
+Classe: Jogador
+Atributos: {
+    + Altura
+    + Peso
+    + Idade
+    + Posição
+    + Gols
+    + Assistências
+}
+
+Métodos: {
+    fazer_gol()
+    dar_assistencia()
+    Se_lesionar()
+    Cair()
+
+}
+ Estado: {
+    Nome: Neymar   
+    Altura: 1,75m
+    Peso: 68Kg
+    Idade: 33 anos
+    Gols: 480
+    Assistências: 280
+    Estado: Em recuperação
+ } 
+
+Classe: Partida
+Atributos: {
+    + Data
+    + Estádio
+    + Nome_andante
+    + Nome_visitante
+    + Gols_mandante
+    + Gols_visitante
+    + Resultado
+}
+
+Métodos: {
+    Iniciar_partida()
+    iniciar_intervalo()
+    encerrar_intervalo()
+    encerrar_partida()
+    mostrar_placar()
+    hino_vencedor()
+}
+ Estado: {
+    Data: 01/02/2026 
+    Estádio: Maracanã
+    Nome_mandante: Flamengo
+    Nome_visitante: Corinthians
+    Gols_mandante: 3
+    Gols_visitante: 1
+    Resultado: Vitória Flamengo
+ } 
