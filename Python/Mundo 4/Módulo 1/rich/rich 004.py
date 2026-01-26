@@ -1,7 +1,5 @@
 from rich import print, inspect
 
-# inspect(int, all=True)
-
 # Declaração de Classe
 
 
