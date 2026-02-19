@@ -1,4 +1,5 @@
-Ex 6:
+Desafio
+ 6:
 Criei um sistema para Escola, ao criar outro sistema para Academia, parte do trabalho já estará feita, pois tenho aluno nos dois.
 
 (A) Confiável
@@ -6,7 +7,8 @@ Criei um sistema para Escola, ao criar outro sistema para Academia, parte do tra
 (C) Manutenível
 (X) Reutilizável
 
-Ex 7:
+Desafio
+ 7:
 Se precisar adicionar uma nova funcionalidade ao sistema, consigo fazer isso com grande facilidade.
 
 (A) Natural
@@ -14,7 +16,8 @@ Se precisar adicionar uma nova funcionalidade ao sistema, consigo fazer isso com
 (C) Reutilizável
 (X) Oportuno
 
-Ex 8:
+Desafio
+ 8:
 Posso desenvolver várias funções que dependam uma da outra ao mesmo tempo se o planejamento for seguido.
 
 (X) Oportuno 
@@ -22,7 +25,8 @@ Posso desenvolver várias funções que dependam uma da outra ao mesmo tempo se 
 (C) COnfiável
 (D) Manutenível
 
-Ex 9:
+Desafio
+ 9:
 O código fica muito simples de ler e de compreender, já que não preciso saber os detalhes de funcionamento ao programar.
 
 (A) Natural
@@ -30,7 +34,8 @@ O código fica muito simples de ler e de compreender, já que não preciso saber
 (X) Manutenível
 (D) Oportuno
 
-Ex 10:
+Desafio
+ 10:
 Posso alterar como uma funcionalidade trabalha e tudo continua funcionando como antes.
 
 (A) Oportuno

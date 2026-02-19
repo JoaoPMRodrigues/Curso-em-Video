@@ -1,4 +1,4 @@
-Ex 11:
+Desafio 11:
 Qual dos objetos abaixo seria o único abstrato da lista?
 
 (A) Sensor
@@ -6,7 +6,7 @@ Qual dos objetos abaixo seria o único abstrato da lista?
 (X) Notificação
 (D) Livro
 
-Ex 12:
+Desafio 12:
 Na teoria de OO, o termo usado para o ato de fazer um objeto existir, a partir de um modelo se chama:
 
 (X) Instanciar
@@ -14,7 +14,7 @@ Na teoria de OO, o termo usado para o ato de fazer um objeto existir, a partir d
 (C) Objetificar
 (D) Forjar
 
-Ex 13:
+Desafio 13:
 Todo objeto tem uma lista de atividades que podem ser feitas com ele ou que ele pode fazer sozinho, que são:
 
 (A) Atributos
@@ -22,7 +22,7 @@ Todo objeto tem uma lista de atividades que podem ser feitas com ele ou que ele 
 (C) Classes
 (D) Instâncias 
 
-Ex 14:
+Desafio 14:
 Ao conjunto de todos os valores de atributos de um objeto em determinado momento, damos o nome de:
 
 (A) Identidade
@@ -30,7 +30,7 @@ Ao conjunto de todos os valores de atributos de um objeto em determinado momento
 (C) Método
 (X) Estado
 
-Ex 15:
+Desafio 15:
 Crei a estrutura de 2 objetos: Um concreto e outro abstrato, inclua também seus principais atributos e métodos.
 
 Classe: Jogador
