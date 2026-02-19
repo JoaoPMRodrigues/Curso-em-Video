@@ -1,6 +1,9 @@
-## O que é esse diretório? 
+## 📘 Sobre este repositório
 
-Este material reúne resoluções de exercícios e anotações feitas por mim durante a realização de cursos do canal **Curso em Vídeo**, administrado pelo Gustavo Guanabara.
+Este repositório contém resoluções de exercícios, anotações e experimentos realizados por mim durante meus estudos nos cursos do canal **Curso em Vídeo**, ministrado por Gustavo Guanabara.
 
-Todo conteúdo material produzido nesse projeto foi feito para fins exclusivamente educacionais.
+⚠️ Este repositório tem finalidade exclusivamente educacional.
 
+Ele funciona como um registro da minha evolução e prática em programação, não sendo um portfólio de projetos profissionais.
+
+Os códigos aqui presentes representam exercícios e desafios propostos ao longo do curso.
