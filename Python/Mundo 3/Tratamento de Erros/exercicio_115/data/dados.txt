@@ -1,5 +1,0 @@
-Pedro;19
-Marcos;45
-Pedro;22
-Lucas;12
-Carlos;16
