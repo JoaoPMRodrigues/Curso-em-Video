@@ -1,6 +1,8 @@
 from rich import print as printf
-from rich.panel import Panel
+from rich.text import Text
 from rich.align import Align
+from rich.console import Group
+from rich.panel import Panel
 from rich.traceback import install
 install()
 
@@ -11,12 +13,15 @@ class Produto():
         self.preco = preco
 
     def etiqueta(self):
-        conteudo = f"{self.nome.center(30, ' ')}"
-        conteudo += f"{'-' * 30}"
-        precof = f"R${self.preco:,.2f}"
-        conteudo += f"{precof.center(30, '.')}"
-        painel = Panel(conteudo, title=f" Produto ", width=34)
-        printf(painel)
+        nome = Text(f"{self.nome}")
+        nome = Align.center(nome)
+        linha = Text("-"*30)
+        preco_formatado = f"R${self.preco:,.2f}"
+        preco = Text(preco_formatado)
+        preco = Align.center(preco)
+        conteudo = Group(nome, linha, preco)
+        mensagem = Panel(conteudo, title='Produto', width=34)
+        printf(mensagem)
 
 
 celular = Produto("Iphone 17", 6000)
