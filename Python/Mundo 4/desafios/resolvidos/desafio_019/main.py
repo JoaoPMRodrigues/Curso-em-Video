@@ -1,8 +1,6 @@
 from rich import print
 from rich.traceback import install
-from rich.text import Text
 from time import sleep
-from rich.console import Console
 install()
 
 
@@ -10,26 +8,26 @@ class livro():
     def __init__(self, titulo, paginas):
         self.titulo = titulo
         self.paginas = paginas
-        self.posicao = 2
+        self.posicao = 1  
 
+        print(f""":open_book: [blue]Você acabou de abrir o livro [red]{self.titulo}[/] que tem [green]{self.paginas} páginas[/] no total. Você está na [yellow]{self.posicao} página[/][/blue]""")
+
+    def fim_do_livro(self):
+        return True if self.paginas==self.posicao else False
+    
     def avancar_paginas(self, n):
-        seta = "[bold white]\u27A4[/]"
         numero_avanco = 0
-        for _ in range(n):
-            if self.posicao <= self.paginas:
-                print(f"Pág{self.posicao} {seta}", end=" ")
-                numero_avanco += 1
-                self.posicao += 1
-                sleep(0.5)
-            else:
-                break
-        print(
-            f"[purple]Você avançou {numero_avanco} páginas e está na[/] [yellow]página {self.posicao-1}[/]")
+        
+        while not self.fim_do_livro() and numero_avanco<n:
+            numero_avanco += 1
+            self.posicao  += 1
+            print(f"Pag{self.posicao} :arrow_forward:", end=" ")
+            sleep(0.3)
 
-        if not self.posicao < self.paginas:
-            console = Console()
-            console.print(
-                f":closed_book: Você chegou ao final do livro '{self.titulo}'", emoji=True, style="red")
+        print(f"[purple]Você avançou {numero_avanco} páginas e está na[/] [yellow]página {self.posicao}[/]")
+        
+        if self.fim_do_livro():
+            print(f":closed_book: [red]Você chegou ao final do livro '{self.titulo}'[/]")
 
 
 l1 = livro("Grokking Algorithms", 20)
