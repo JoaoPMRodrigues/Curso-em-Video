@@ -1,5 +1,4 @@
 from rich import print
-from rich.console import Console
 from rich.traceback import install
 install()
 
@@ -8,27 +7,25 @@ class caneta():
     def __init__(self, cor):
         match cor.lower():
             case "verde":
-                self.cor = "green"
+                self.cor = "[green]"
             case "azul":
-                self.cor = "blue"
+                self.cor = "[blue]"
             case "vermelho":
-                self.cor = "red"
-        self.destampada = False
+                self.cor = "[red]"
+        self.tampada = True
 
     def destampar(self):
-        self.destampada = True
+        self.tampada = False
 
     def quebra_linha(self, n):
         for _ in range(n):
             print()
 
     def escrever(self, mensagem):
-        console = Console()
-        if self.destampada:
-            console.print(mensagem, style=self.cor, end="")
+        if not self.tampada:
+            print(f"{self.cor}{mensagem}[/]")
         else:
-            console.print(
-                f":no_entry_sign: A [{self.cor}]caneta[/] está tampada.", emoji=True)
+            print(f":no_entry_sign: A {self.cor}caneta[/] está tampada.")
 
 
 c1 = caneta("Azul")
