@@ -41,6 +41,8 @@ class ControleRemoto():
 
     def alerta(self):
         self.erro = True
+        mensagem = " :no_entry_sign: [red]Comando errado![/]"
+        return mensagem
 
     def tela(self):
 
@@ -48,7 +50,7 @@ class ControleRemoto():
             mensagem = ":no_entry_sign: [red]A TV está desligada[/]"
             painel = Panel(mensagem, title="[ TV ]", expand=False)
         elif self.erro:
-            mensagem = " :no_entry_sign: [red]Comando errado![/]"
+            mensagem = self.alerta()
             painel = Panel(mensagem, title="[ TV ]", expand=False)
             self.erro = False
         else:
