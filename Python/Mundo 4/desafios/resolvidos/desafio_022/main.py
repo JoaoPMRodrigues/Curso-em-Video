@@ -41,32 +41,35 @@ class ControleRemoto():
 
     def alerta(self):
         self.erro = True
-        mensagem = " :no_entry_sign: [red]Comando errado![/]"
+
+    def desligado(self):
+        return ":no_entry_sign: [red]A TV está desligada[/]"
+
+    def mensagem_erro(self):
+        self.erro = False
+        return " :no_entry_sign: [red]Comando errado![/]"
+
+    def mensagem(self):
+        mensagem = "CANAL = "
+        for i in range(self.canal_min, self.canal_max+1):
+            if self.canal == i+1:
+                mensagem += f"[on yellow]{i}[/] "
+            else:
+                mensagem += f"{i+1} "
+        blocos = "[white on green] [/]"*self.volume
+        blocos += "[white on red] [/]"*(self.volume_max-self.volume)
+
+        mensagem += f"\nVOLUME = {blocos}"
         return mensagem
 
     def tela(self):
-
         if not self.ligado:
-            mensagem = ":no_entry_sign: [red]A TV está desligada[/]"
-            painel = Panel(mensagem, title="[ TV ]", expand=False)
+            msg = self.desligado()
         elif self.erro:
-            mensagem = self.alerta()
-            painel = Panel(mensagem, title="[ TV ]", expand=False)
-            self.erro = False
+            msg = self.mensagem_erro()
         else:
-            canal = "CANAL = "
-            for i in range(self.canal_max):
-                if self.canal == i+1:
-                    canal += f"[on yellow]{i+1}[/] "
-                else:
-                    canal += f"{i+1} "
-
-            blocos = "[white on green] [/]"*self.volume
-            blocos += "[white on red] [/]"*(self.volume_max-self.volume)
-
-            mensagem = canal
-            mensagem += f"\nVOLUME = {blocos}"
-            painel = Panel(mensagem, title="[ TV ]", expand=False)
+            msg = self.mensagem()
+        painel = Panel(msg, title="[ TV ]", expand=False)
 
         print(painel)
 
