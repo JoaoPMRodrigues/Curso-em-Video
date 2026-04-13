@@ -1,7 +1,7 @@
 from rich import inspect
-from aluno import Aluno
-from professor import Professor
-from funcionario import Funcionario
+from .lib.aluno import Aluno
+from .lib.professor import Professor
+from .lib.funcionario import Funcionario
 
 aluno1 = Aluno("João", 18, "Ciência da Computação", "25.2")
 aluno1.fazer_aniversario()
