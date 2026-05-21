@@ -52,10 +52,10 @@ class ControleRemoto():
     def mensagem(self):
         mensagem = "CANAL = "
         for i in range(self.canal_min, self.canal_max+1):
-            if self.canal == i+1:
+            if self.canal == i:
                 mensagem += f"[on yellow]{i}[/] "
             else:
-                mensagem += f"{i+1} "
+                mensagem += f"{i} "
         blocos = "[white on green] [/]"*self.volume
         blocos += "[white on red] [/]"*(self.volume_max-self.volume)
 
