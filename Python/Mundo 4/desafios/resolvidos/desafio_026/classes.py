@@ -18,9 +18,9 @@ class Funcionario(ABC):
     def analisar_salario(self):
         correspondencia = self.salario/Funcionario.salario_minimo
 
-        mensagem = f"""O salário de [blue]{self.nome}[/]([purple]{type(self).__name__}[/]) é de 
-[green]R${self.salario:.2f}[/] e corresponde a [yellow]{correspondencia:.1f} salários
-mínimos[/]."""
+        mensagem = f"O salário de [blue]{self.nome}[/]([purple]{type(self).__name__}[/]) é de "
+        mensagem += f"[green]R${self.salario:.2f}[/]\ne corresponde a [yellow]{correspondencia:.1f} salários "
+        mensagem += f"mínimos[/]."
         painel = Panel(mensagem, title="Análise de Salário", expand=False)
         print(painel)
 

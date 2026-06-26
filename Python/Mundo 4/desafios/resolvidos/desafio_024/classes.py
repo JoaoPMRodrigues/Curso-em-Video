@@ -6,9 +6,12 @@ class BebidaQuente(ABC):
     def __init__(self):
         super().__init__()
 
-    @abstractmethod
     def preparar(self):
-        pass
+        print(f"--- [{self.cor}]Iniciando o Preparo[/] ---")
+        print(f"1. {self.ferver_agua()}")
+        print(f"2. {self.misturar()}")
+        print(f"3. {self.servir()}")
+        print("--- Bebida Pronta ---\n")
 
     @abstractmethod
     def ferver_agua(self):
@@ -26,6 +29,7 @@ class BebidaQuente(ABC):
 class Cafe(BebidaQuente):
     def __init__(self):
         super().__init__()
+        self.cor = "red"
 
     def ferver_agua(self):
         return super().ferver_agua()
@@ -36,17 +40,11 @@ class Cafe(BebidaQuente):
     def servir(self):
         return "Servindo em xícara pequena."
 
-    def preparar(self):
-        print("--- [red]Iniciando o Preparo[/] ---")
-        print(f"1. {self.ferver_agua()}")
-        print(f"2. {self.misturar()}")
-        print(f"3. {self.servir()}")
-        print("--- Bebida Pronta ---")
-
 
 class Cha(BebidaQuente):
     def __init__(self):
         super().__init__()
+        self.cor = "green"
 
     def ferver_agua(self):
         return super().ferver_agua()
@@ -57,17 +55,11 @@ class Cha(BebidaQuente):
     def servir(self):
         return "Servindo na caneca de procelana com limão"
 
-    def preparar(self):
-        print("--- [green]Iniciando o Preparo[/] ---")
-        print(f"1. {self.ferver_agua()}")
-        print(f"2. {self.misturar()}")
-        print(f"3. {self.servir()}")
-        print("--- Bebida Pronta ---")
-
 
 class Leite(BebidaQuente):
     def __init__(self):
         super().__init__()
+        self.cor = "blue"
 
     def ferver_agua(self):
         return super().ferver_agua()
@@ -77,10 +69,3 @@ class Leite(BebidaQuente):
 
     def servir(self):
         return "Servindo na caneca grande, já com café."
-
-    def preparar(self):
-        print("--- [blue]Iniciando o Preparo[/] ---")
-        print(f"1. {self.ferver_agua()}")
-        print(f"2. {self.misturar()}")
-        print(f"3. {self.servir()}")
-        print("--- Bebida Pronta ---")

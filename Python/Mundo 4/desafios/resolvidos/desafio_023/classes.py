@@ -23,10 +23,10 @@ class Quadrado(Poligono):
         self.lados = 4
 
     def area(self):
-        return f"{self.tamanho*self.tamanho:.2f}"
+        return f"{self.tamanho**2:.2f}"
 
     def perimetro(self):
-        return f"{self.tamanho*4:.2f}"
+        return f"{self.tamanho*self.lados:.2f}"
 
 
 class Circulo(Poligono):
