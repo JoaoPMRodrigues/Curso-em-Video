@@ -6,7 +6,7 @@ install()
 
 def main():
     c1 = ContaBancaria("João", 2611, 1000)
-    c1.depositar(1000)
+    c1.depositar(-1000)
     c1._saldo = 0
     c1.titular = "Pedro"
     # Imprimindo
