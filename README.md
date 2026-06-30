@@ -1,9 +1,51 @@
-## 📘 Sobre este repositório
+# Curso em Vídeo
 
-Este repositório contém resoluções de exercícios, anotações e experimentos realizados por mim durante meus estudos nos cursos do canal **Curso em Vídeo**, ministrado por Gustavo Guanabara.
+Este repositório reúne todos os exercícios, desafios e projetos desenvolvidos durante os cursos do **Curso em Vídeo**, ministrados pelo professor Gustavo Guanabara.
 
-⚠️ Este repositório tem finalidade exclusivamente educacional.
+O objetivo é documentar minha evolução nos estudos, praticar programação e manter um histórico organizado do conteúdo aprendido.
 
-Ele funciona como um registro da minha evolução e prática em programação, não sendo um portfólio de projetos profissionais.
+## Estrutura
 
-Os códigos aqui presentes representam exercícios e desafios propostos ao longo do curso.
+```text
+Curso em Video/
+├── Python/
+│   ├── Mundo 1/
+│   ├── Mundo 2/
+│   ├── Mundo 3/
+│   └── Mundo 4/
+│
+├── Java/
+│   ├── Básico/
+│   └── POO/
+│
+└── README.md
+```
+
+## Python
+
+- **Mundo 1** — Fundamentos da linguagem
+- **Mundo 2** — Estruturas de controle
+- **Mundo 3** — Estruturas compostas
+- **Mundo 4** — Programação Orientada a Objetos (POO)
+
+## Java
+
+- **Básico** — Sintaxe, lógica e fundamentos da linguagem
+- **POO** — Programação Orientada a Objetos em Java (Em breve)
+
+## Objetivos
+
+- Consolidar os conceitos apresentados nas aulas.
+- Resolver exercícios e desafios propostos.
+- Explorar soluções próprias antes de assistir às resoluções.
+- Desenvolver boas práticas de programação.
+- Acompanhar minha evolução ao longo dos estudos.
+
+## Cursos
+
+- Python 3
+- Java
+
+---
+
+> Repositório de estudos pessoais. Os exercícios e desafios são baseados nos cursos do **Curso em Vídeo**, de Gustavo Guanabara.
